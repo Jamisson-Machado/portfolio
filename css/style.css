@@ -1,0 +1,176 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'nunito', helvetica;
+}
+html,body{
+	height: 100%;
+	scroll-behavior: 
+}
+.clear{
+	clear: both;
+}
+.cor1{
+	color: #43ff5e;
+}
+.fixed{
+	width: 100%;
+	position: fixed;
+}
+header{
+	position: fixed;
+	width: 100%;
+	background-color: #333333;
+	box-shadow:0px 1px 5px #43ff5e;
+}
+
+/*menu esquerdo da header*/
+.links-center{
+		display: flex;
+		margin:auto;
+		padding: 0 3%;
+}
+header div.container-botons{
+	display: flex;            
+}
+.logo{
+	background-image: url(../icones/axe.png);
+	width: 43px;
+	height: 43px;
+	margin: auto;
+	background-size: cover;
+	box-sizing: content-box;
+}
+.perfil{
+	background-image: url(../imagens/perfil-mini.png);
+	width: 30px;
+	height: 30px;
+	margin: auto;
+	margin-left: 35px;
+	border-radius: 50%;
+	background-size: cover;
+}
+
+/*menu direito da header*/
+.container-links{
+	display: flex;
+	margin: auto;
+    margin-right: 0;
+}
+.container-links a{
+	margin-left: 25px;
+}
+.container-links i{
+	font-size: 28px;
+	color: #43ff5e;
+}
+
+/*conteúdo*/
+main{
+	width: 100%;
+	min-height: calc(100% - 22px);
+	background-color: #242424;
+	padding: 30px 5% 30px 5%; 
+	padding-top: 46px;
+}
+
+section.sobre-mim{              
+	display: flex;
+	max-width: 1920px;
+	margin: auto;
+	padding-top: 20px;
+}
+
+/*lado da foto*/
+section.sobre-perfil > .foto{
+	width: 250px;
+	height: 250px;
+	background-image: url("../imagens/perfil.jpg");
+	background-size: cover;
+	border-radius: 50%;
+    margin-bottom: 50px;
+    box-shadow:30px 15px 18px #151515;
+    box-sizing: content-box;
+}
+
+section .sobre-perfil .skills > h2{
+	font-size: 16px;
+	margin-top: 9px;
+}
+
+section .sobre-perfil .skills div > i{
+	font-size: 30px;
+	margin: 5px;
+}
+
+/*lado do texto*/
+article.sobre-texto{
+	text-indent: 5px;
+	padding: 0 10px 0 200px;
+	text-align: justify;
+}
+
+/*rodapé*/
+footer{
+	width: 100%;
+	height: auto;
+	padding: 4px;
+	background-color: black;
+}
+footer > p{
+	margin: auto;
+	font-size: 10px;
+	text-align: center;
+}
+
+/* medias screens */
+@media screen and (max-width: 1000px){
+
+	section.sobre-mim{              
+	width: 100%;
+	display: inline-block;
+	/*border: 1px solid red;*/
+	margin: auto;
+}
+
+section.sobre-perfil > .foto{
+	margin:auto;
+	margin-bottom: 40px;
+}
+section.sobre-perfil > .skills{
+	text-align: center;
+}
+
+article.sobre-texto{
+	/*border: solid 1px red;*/
+	text-indent: 5px;
+	padding: 0;
+	margin-top: 50px;
+	text-align: justify;
+}
+
+main{
+	height: auto;
+}
+} /*fim das medias screens*/
+
+/*scrollbar pesonalizada*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #242424; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333333; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #43ff5e; 
+}
